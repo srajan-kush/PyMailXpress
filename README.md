@@ -19,7 +19,7 @@ Follow these steps to set up and run PyMailXpress:
    - Create an app password named "PyMailXpress" or any name you prefer.
    - Copy the generated app password.
 
-   ![Generated App Password](link_to_generated_app_password_screenshot.png)
+   ![Generated App Password](https://github.com/srajan-kush/PyMailXpress/blob/main/mul_emails/static/screenshot/generatedApPas.png)
 
 3. **Clone the Repository:**
    ```bash
