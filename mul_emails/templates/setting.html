@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PyMailXpress</title>
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Lora,Arial, sans-serif;
+        padding: 20px;
+        margin: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        {% comment %} text-align: center; {% endcomment %}
+        background-color: #222;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    ul, ol {
+        text-align: left;
+        margin-left: 40px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        {% comment %} color: #fff; {% endcomment %}
+        color: yellow;
+        text-decoration: underline;
+    }
+    .screenshot {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        {% comment %} margin-left:35px; {% endcomment %}
+        height: 230px;
+        shadow:10px 10px 5px solid black;
+        border-radius:10px;
+        text-align: center;
+    }
+
+    .links{
+        margin-top:40px;
+    }
+
+    .links img{
+        height:30px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+</style>
+
+{% load static %}
+
+</head>
+<body>
+<div class="container">
+    <h1>Settings: PyMailXpress</h1>
+    <p>Welcome to the settings page of PyMailXpress. Here, you can configure and manage your email sending preferences.</p>
+    <h2>Project Overview:</h2>
+    <p>PyMailXpress is a Django web application designed to simplify your email sending experience.</p>
+    <h2>Getting Started:</h2>
+    <ol>
+        <li>Ensure that your email account has two-factor authentication enabled for security.</li>
+        <li>Navigate to <a href="https://myaccount.google.com/" target="_blank">Google Account</a> and search for "App Passwords".</li>
+        <li>Create an app password named "PyMailXpress" or any other name you prefer.</li>
+        <li>Copy the generated app password.</li>
+        <img  src="{% static "screenshot/generatedApPas.png" %}" alt="Generated App Password" class="screenshot">
+        <li>Clone this repository to your local machine: <code>git clone https://github.com/your-username/pymailxpress.git</code></li>
+        <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+        <li>Run the development server: <code>python manage.py runserver</code></li>
+    </ol>
+    <h2>Usage:</h2>
+    <ol>
+        <li>Access PyMailXpress in your web browser at <code>http://localhost:8000</code>.</li>
+        <li>Enter your email address and the generated app password in the provided fields.</li>
+        <li>Enter a list of recipient email addresses where you want to send the emails.</li>
+        <li>Enter variables you want to use in your email content.</li>
+        <li>Write your email content, using the <code>{var}</code> format to insert variables.</li>
+        <li>Click the "Send" button to send the emails.</li>
+    </ol>
+    <h2>Next Steps:</h2>
+    <ol>
+        <li>Customize the design and functionality of PyMailXpress to suit your needs.</li>
+        <li>Explore advanced features such as email templates, scheduling, and analytics.</li>
+        <li>Contribute to the PyMailXpress project on <a href="https://github.com/your-username/pymailxpress" target="_blank">GitHub</a>.</li>
+        <li>Share your experience and feedback with the PyMailXpress community by sending us an email or leaving a comment on <a href="https://www.linkedin.com/in/srajan-kushwaha/" target="_blank">Linkdin</a></li>
+    </ol>
+    {% comment %} <h2>Screenshots:</h2>
+    
+    <img src="placeholder_reference_screenshot.png" alt="Reference Screenshot" class="screenshot">
+    <h2>Video Tutorial:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder_video_id" frameborder="0" allowfullscreen></iframe> {% endcomment %}
+
+    <p>Don't let email overwhelm you - embrace the magic of PyMailXpress and streamline your communication process !</p>
+
+    <footer>
+        <div class="links">
+            <a href = "https://www.linkedin.com/in/srajan-kushwaha/"><img src = "{% static "logo/linkedin.png" %}"></img></a>
+            <a href = "https://github.com/srajan-kush"><img src = "{% static "logo/github.png" %}"></img></a>
+            <a href = "https://x.com/Srajan_k0143?t=PkU-ApY76BFcu1CGb-269A&s=08"><img src = "{% static "logo/twitter.png" %}"></img></a>
+            <a href = "https://www.instagram.com/sraja.n.k/"><img src = "{% static "logo/insta.png" %}"></img></a>
+        </div>
+    </footer>
+</div>
+
+{% comment %} <script>
+    window.addEventListener('beforeunload', function(event) {
+        // Prompt user with confirmation message (optional)
+        // event.returnValue = ''; // Uncomment this line to prompt a confirmation message
+
+        // Redirect to another page
+        window.location.href = 'http://127.0.0.1:8000/';
+    });
+</script> {% endcomment %}
+</body>
+</html>

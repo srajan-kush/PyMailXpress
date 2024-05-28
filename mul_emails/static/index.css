@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-box {
+    position: fixed;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /* text-align: right; */
+    height: 50px;
+    width: 500px;
+}
+
+.nav {
+    padding: 10px 16px;
+    margin: 10px 10px 10px 10px;
+    /* color: #FFFFFF; */
+    background: #444857;
+    font: 15px;
+    border-radius: 5%;
+    height: 20px;
+    width: 50px;
+}
+
+.submit {
+    height: 40px;
+    width: 80px;
+    border-radius: 5%;
+}
+
+.nav:hover,
+.submit:hover {
+    background: #47CF73;
+    cursor: pointer;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.right-align {
+    margin-top: 20px;
+    margin-left: 68%;
+}
+
+.text-area {
+    outline: none;
+    border: none;
+    resize: none;
+    height: 25px;
+    width: 100%; /* Set width to 100% to take up full available width */
+}
+
+.sender-mail-detail {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 10px;
+    width: 48%;
+}
+
+.sender-pass {
+    position: fixed;
+    margin-top: 60px;
+    height: 10px;
+    width: 48%;
+    margin-left: 50%;
+}
+
+.row {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.massage-1 {
+    margin-bottom: 0px;
+}
+
+.row-1 {
+    position: fixed;
+    margin-top: 85px;
+}
+
+.row-2 {
+    position: fixed;
+    margin-top: 180px;
+}
+
+.text-area-1 {
+    outline: none;
+    border: none;
+    resize: none;
+    height: 100px;
+    width: 100%; /* Set width to 100% to take up full available width */
+}
+
+.row-3 {
+    position: fixed;
+    margin-top: 345px;
+}
+
+.text-area-2 {
+    outline: none;
+    border: none;
+    resize: none;
+    height: 180px;
+    width: 100%; /* Set width to 100% to take up full available width */
+}
+
+.row-4 {
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 50%;
+}
+
+.text-area-4{
+    outline: none;
+    border: none;
+    resize: none;
+    height: 525px;
+    width: 100%; /* Set width to 100% to take up full available width */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dark-mode {
+    background-color: #242222;
+    color: whitesmoke;
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+/* Text inside braces */
+.brace-content {
+    color: red; /* Color for text inside braces */
+}

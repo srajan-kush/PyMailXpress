@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyMailXpress</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+
+</head>
+<body class="bg-dark">
+
+<form method = "POST" class="form">
+    {% csrf_token %}
+
+    {% if massage %}
+    <h3 style="color:red;">{{massage}}</h3>
+    {% endif %}
+
+    <div class="nav-box">
+        <nav class="right-align fixed">
+            <a class="link nav" href="">Light</a>
+            <a class="link nav" href="setting">Help</a>
+            <a class="link nav" href="setting">Setting</a>
+            <button class="link nav submit" type="submit">Send</button>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+                <div class="sender-mail-detail">
+                    <div class="massage-1">
+                        <h4 style="color: white;">Sender mail</h4>
+                    </div>
+
+                    <div class="email-area ">
+                        <input class="text-area dark-mode" name="sender_mail" id="#" placeholder="sender_mail = "></input>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-1">
+                <div class="sender-mail-detail">
+                    <div class="massage-1">
+                        <h4 style="color: white;">Enter generated app password</h4>
+                    </div>
+
+                    <div class="email-area">
+                        <input class="text-area dark-mode" name="sender_mail_pass" id="#" placeholder="one_time_password = "></input>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-2">
+                <div class="sender-mail-detail">
+                    <div class="massage-1">
+                        <h4 style="color: white;">Enter List of mail of Reciepaints</h4>
+                    </div>
+
+                    <div class="email-area">
+                        <textarea class="text-area-1 dark-mode" name="list_of_email_receivers" id="#" placeholder="emails=">[]</textarea>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-3">
+                <div class="sender-mail-detail">
+                    <div class="massage-1">
+                        <h4 style="color: white;">Variable Declaration box</h4>
+                    </div>
+
+                    <div class="email-area">
+                        <textarea class="text-area-2 dark-mode" name="variables" id="#">subject = '',</textarea>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-4">
+                <div class="sender-mail-detail">
+                    <div class="massage-1">
+                        <h4 style="color: white;">Mail Box</h4>
+                    </div>
+
+                    <div class="email-area">
+                        <textarea class="text-area-4 dark-mode" id="editor" name="full_mail"spellcheck="false"></textarea>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</form>
+
+
+<script src="{% static 'script.js' %}"></script>
+
+{% comment %} <script>
+    window.addEventListener('beforeunload', function(event) {
+        // Prompt user with confirmation message (optional)
+        // event.returnValue = ''; // Uncomment this line to prompt a confirmation message
+
+        // Redirect to another page
+        window.location.href = '/';
+    });
+</script> {% endcomment %}
+
+</body>
+</html>
