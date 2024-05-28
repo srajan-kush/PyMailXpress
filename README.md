@@ -25,38 +25,38 @@ Follow these steps to set up and run PyMailXpress:
    ```bash
    git clone https://github.com/your-username/pymailxpress.git
 4. **Install Dependencies:**
-   -Navigate to the project directory and install the required dependencies:
+   <br>- Navigate to the project directory and install the required dependencies:
    ```bash
    pip install -r requirements.txt
 5. **Run the Development Server:**
-   -Start the Django development server:
+   <br>- Start the Django development server:
    ```bash
    python manage.py runserver
 
 ## Usage
 
 1. **Access PyMailXpress:**
-   -Open your web browser and go to http://localhost:8000.
+   <br>- Open your web browser and go to http://localhost:8000.
 
 2. **Enter Email Credentials:**
-   -Enter your email address and the generated app password in the provided fields.
+   <br>- Enter your email address and the generated app password in the provided fields.
 
 3. **Enter Recipient Emails:**
-   -Input a list of recipient email addresses where you want to send the emails.
+   <br>- Input a list of recipient email addresses where you want to send the emails.
 
 4. **Define Variables:**
-   -Specify the variables you want to use in your email content.
+   <br>- Specify the variables you want to use in your email content.
 
 5. **Compose Your Email:**
-   -Write your email content, using the {var} format to insert variables.
+   <br>- Write your email content, using the {var} format to insert variables.
 
 6. **Send Emails:**
-   -Click the "Send" button to send the emails.
+   <br>- Click the "Send" button to send the emails.
 
 ## Next Steps
 
 1. **Customize Design and Functionality:**
-   -Tailor the design and functionality of PyMailXpress to fit your needs.
+   <br>- Tailor the design and functionality of PyMailXpress to fit your needs.
 
 2. **Explore Advanced Features:**
 
@@ -65,10 +65,10 @@ Follow these steps to set up and run PyMailXpress:
    * Analytics
    
 3. **Contribute:**
--Contribute to the PyMailXpress project on GitHub.
+<br>- Contribute to the PyMailXpress project on GitHub.
 
 4. **Share Your Experience:**
-   -Share your experience and feedback with the PyMailXpress community by sending us an email or leaving a comment below.
+   <br>- Share your experience and feedback with the PyMailXpress community by sending us an email or leaving a comment below.
 
 
 <h3>Don't let email overwhelm you - embrace the magic of PyMailXpress and streamline your communication process!</h3>
