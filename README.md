@@ -23,7 +23,7 @@ Follow these steps to set up and run PyMailXpress:
 
 3. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/pymailxpress.git
+   git clone https://github.com/srajan-kush/PyMailXpress.git
 4. **Install Dependencies:**
    <br>- Navigate to the project directory and install the required dependencies:
    ```bash
