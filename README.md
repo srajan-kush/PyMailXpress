@@ -72,3 +72,10 @@ Follow these steps to set up and run PyMailXpress:
 
 
 <h3>Don't let email overwhelm you - embrace the magic of PyMailXpress and streamline your communication process!</h3>
+
+## Reference Video
+
+For a detailed walkthrough, check out the video below:
+
+[Reference Video](https://youtu.be/-uxk3EwehLg)
+
